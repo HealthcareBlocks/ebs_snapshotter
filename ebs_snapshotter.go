@@ -10,7 +10,7 @@
 * AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION should be set prior to execution.
  */
 
-package main // import "github.com/atlashealth/ebs_snapshotter"
+package main // import "github.com/healthcareblocks/ebs_snapshotter"
 
 import (
 	"flag"
