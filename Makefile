@@ -1,7 +1,12 @@
-.DEFAULT_GOAL := release
+.DEFAULT_GOAL := build
 
-release:
-	@docker run --rm -v "$$PWD":/src centurylink/golang-builder-cross
-	@mkdir -p bin && mv ebs_snapshotter* bin/
+build: clean
+	docker run --rm -it -v $(PWD):/src healthcareblocks/gobuild -o darwin -a amd64
 
-.PHONY: release
+build_all: clean
+	docker run --rm -it -v $(PWD):/src healthcareblocks/gobuild
+
+clean:
+	rm -fr ./bin/*
+
+.PHONY: build clean
