@@ -6,18 +6,18 @@
 //
 // Note: this package relies on the AWS SDK, thus the host environment should
 // either have an associated IAM role or user with the following IAM permissions:
-// - ec2:CopySnapshot
-// - ec2:CreateSnapshot
-// - ec2:CreateTags
-// - ec2:DeleteSnapshot
-// - ec2:DeleteTags
-// - ec2:DescribeSnapshotAttribute
-// - ec2:DescribeSnapshots
-// - ec2:DescribeTags
-// - ec2:DescribeVolumes
-// - ec2:ModifySnapshotAttribute
-// - ec2:ResetSnapshotAttribute
-// - SNS:Publish (optional)
+// * ec2:CopySnapshot
+// * ec2:CreateSnapshot
+// * ec2:CreateTags
+// * ec2:DeleteSnapshot
+// * ec2:DeleteTags
+// * ec2:DescribeSnapshotAttribute
+// * ec2:DescribeSnapshots
+// * ec2:DescribeTags
+// * ec2:DescribeVolumes
+// * ec2:ModifySnapshotAttribute
+// * ec2:ResetSnapshotAttribute
+// * SNS:Publish (optional)
 
 package main // import "github.com/healthcareblocks/ebs_snapshotter"
 
