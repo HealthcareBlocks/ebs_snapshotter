@@ -4,17 +4,17 @@
 //
 // Note: this package relies on the AWS SDK, thus the host environment should
 // either have an associated IAM role or user with the following IAM permissions:
-// * ec2:CopySnapshot
-// * ec2:CreateSnapshot
-// * ec2:CreateTags
-// * ec2:DeleteSnapshot
-// * ec2:DeleteTags
-// * ec2:DescribeSnapshotAttribute
-// * ec2:DescribeSnapshots
-// * ec2:DescribeTags
-// * ec2:DescribeVolumes
-// * ec2:ModifySnapshotAttribute
-// * ec2:ResetSnapshotAttribute
+// 	- ec2:CopySnapshot
+// 	- ec2:CreateSnapshot
+// 	- ec2:CreateTags
+// 	- ec2:DeleteSnapshot
+// 	- ec2:DeleteTags
+// 	- ec2:DescribeSnapshotAttribute
+// 	- ec2:DescribeSnapshots
+// 	- ec2:DescribeTags
+// 	- ec2:DescribeVolumes
+// 	- ec2:ModifySnapshotAttribute
+// 	- ec2:ResetSnapshotAttribute
 package ebs
 
 import (
@@ -55,7 +55,7 @@ type SnapshotManager struct {
 }
 
 // NewSnapshotManager returns a new SnapshotManager pointer. The input parameters are based
-// on the SnapshotManager struct fields.
+// on the SnapshotManager struct fields. Enabling debug mode will dump out AWS requests / responses.
 //
 //     mgr := ebs.NewSnapshotManager("us-west-2", "", true, 5, false)
 //
