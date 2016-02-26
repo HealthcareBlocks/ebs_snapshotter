@@ -68,7 +68,7 @@ The binary is used as the entrypoint, so you can pass options directly:
 
 Example:
 ```
-docker run --rm -it healthcareblocks/ebs_snapshotter -retain=5
+docker run --rm healthcareblocks/ebs_snapshotter -retain=5
 ```
 
 ## AWS Authentication
