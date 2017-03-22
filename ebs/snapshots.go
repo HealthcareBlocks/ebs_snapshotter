@@ -30,9 +30,6 @@ import (
 	"github.com/healthcareblocks/ebs_snapshotter/awserror"
 )
 
-// MaxRetries is the number of AWS service requests that can be retried
-const MaxRetries = 10
-
 // SnapshotManager manages EBS snapshots via the AWS SDK
 type SnapshotManager struct {
 	// The EC2 region containg the EBS volumes to snapshot. This parameter is required.
@@ -68,7 +65,7 @@ func NewSnapshotManager(region string, endpoint string, copyVolumeTags bool, num
 		log.Fatal("numSnapshotsToRetain should be great than 0")
 	}
 
-	config := aws.NewConfig().WithRegion(region).WithMaxRetries(MaxRetries)
+	config := aws.NewConfig().WithRegion(region)
 	if endpoint != "" {
 		config = config.WithEndpoint(endpoint)
 	}
