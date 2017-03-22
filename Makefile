@@ -6,9 +6,6 @@ osx:
 linux:
 	docker run --rm -it -v $(PWD):/src healthcareblocks/gobuild -o linux
 
-deps:
-	godep restore
-
 docker:
 	docker build -t healthcareblocks/ebs_snapshotter .
 	@docker images -f "dangling=true" -q | xargs docker rmi
