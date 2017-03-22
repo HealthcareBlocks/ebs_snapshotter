@@ -40,13 +40,13 @@ var (
 	debug      = flag.Bool("d", false, "Turns on AWS request profiling")
 
 	// EBS snapshot flags
-	regions     = flag.String("regions", "", "AWS EC2 regions (comma delimited) to include in EBS snapshots. If not set, this value is determined using the host machine's EC2 metadata.")
+	regions     = flag.String("regions", "", "AWS EC2 regions (comma delimited) to include in EBS snapshots. If not set\n\tthis value is determined using the host machine's EC2 metadata.")
 	copyTags    = flag.Bool("copytags", true, "Copy tags from volume")
 	retainCount = flag.Int("retain", 7, "Keep x number of snapshots per each volume")
 
 	// SNS alert flags
 	snsTopic   = flag.String("sns_topic", "", "Optional SNS ARN topic. Triggers an alert for each completed region.")
-	snsRegion  = flag.String("sns_region", "", "AWS region for SNS topic. If not set, this value is determined using the host machine's EC2 metadata.")
+	snsRegion  = flag.String("sns_region", "", "AWS region for SNS topic. If not set, this value is determined using\n\tthe host machine's EC2 metadata.")
 	snsSubject = flag.String("sns_subject", "", "SNS subject. If set, it overrides the default subject.")
 	snsMessage = flag.String("sns_message", "", "SNS message. If set, it overrides the default message.")
 )

@@ -1,6 +1,7 @@
 {
 	"ImportPath": "github.com/healthcareblocks/ebs_snapshotter",
-	"GoVersion": "go1.6",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v75",
 	"Deps": [
 		{
 			"ImportPath": "github.com/Sirupsen/logrus",
