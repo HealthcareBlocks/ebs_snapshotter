@@ -1,0 +1,97 @@
+{
+    "memo": "1f39ef2b658f6cf351afec7b4b043c0197bca338e23f2aa57ea224dbe6b69b38",
+    "projects": [
+        {
+            "name": "github.com/Sirupsen/logrus",
+            "revision": "446d1c146faa8ed3f4218f056fcd165f6bcfda81",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/aws/aws-sdk-go",
+            "branch": "master",
+            "revision": "50ea7c208c62070ce5adb08a29f63231a2e54119",
+            "packages": [
+                "aws",
+                "aws/awserr",
+                "aws/awsutil",
+                "aws/client",
+                "aws/client/metadata",
+                "aws/corehandlers",
+                "aws/credentials",
+                "aws/credentials/ec2rolecreds",
+                "aws/credentials/endpointcreds",
+                "aws/credentials/stscreds",
+                "aws/defaults",
+                "aws/ec2metadata",
+                "aws/endpoints",
+                "aws/request",
+                "aws/session",
+                "aws/signer/v4",
+                "private/protocol",
+                "private/protocol/ec2query",
+                "private/protocol/query",
+                "private/protocol/query/queryutil",
+                "private/protocol/rest",
+                "private/protocol/xml/xmlutil",
+                "service/ec2",
+                "service/sns",
+                "service/sts"
+            ]
+        },
+        {
+            "name": "github.com/davecgh/go-spew",
+            "version": "v1.1.0",
+            "revision": "346938d642f2ec3594ed81d874461961cd0faa76",
+            "packages": [
+                "spew"
+            ]
+        },
+        {
+            "name": "github.com/go-ini/ini",
+            "version": "v1.9.0",
+            "revision": "193d1ecb466bf97aae8b454a5cfc192941c64809",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/healthcareblocks/ec2_metrics_publisher",
+            "revision": "91282c9532a57ed2110f8e5a4c52361b5bd21217",
+            "packages": [
+                "metadata"
+            ]
+        },
+        {
+            "name": "github.com/jmespath/go-jmespath",
+            "revision": "0b12d6b521d83fc7f755e7cfc1b1fbdd35a01a74",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/pmezard/go-difflib",
+            "version": "v1.0.0",
+            "revision": "792786c7400a136282c1664665ae0a8db921c6c2",
+            "packages": [
+                "difflib"
+            ]
+        },
+        {
+            "name": "github.com/stretchr/testify",
+            "branch": "master",
+            "revision": "4d4bfba8f1d1027c4fdbe371823030df51419987",
+            "packages": [
+                "assert"
+            ]
+        },
+        {
+            "name": "golang.org/x/sys",
+            "revision": "20457ee8ea8546920d3f4e19e405da45250dc5a5",
+            "packages": [
+                "unix"
+            ]
+        }
+    ]
+}
