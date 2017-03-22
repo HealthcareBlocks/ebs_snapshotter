@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "github.com/Sirupsen/logrus": {
+            "revision": "446d1c146faa8ed3f4218f056fcd165f6bcfda81"
+        },
+        "github.com/aws/aws-sdk-go": {
+            "branch": "master"
+        },
+        "github.com/healthcareblocks/ec2_metrics_publisher": {
+            "revision": "91282c9532a57ed2110f8e5a4c52361b5bd21217"
+        },
+        "github.com/stretchr/testify": {
+            "branch": "master"
+        }
+    }
+}
