@@ -77,12 +77,15 @@ func NewSnapshotManager(region string, endpoint string, copyVolumeTags bool, num
 		config = config.WithLogLevel(aws.LogDebugWithHTTPBody)
 	}
 
+	sess, err := session.NewSession(config)
+	awserror.HandleError(err)
+
 	return &SnapshotManager{
 		Region:               region,
 		Endpoint:             endpoint,
 		CopyVolumeTags:       copyVolumeTags,
 		NumSnapshotsToRetain: numSnapshotsToRetain,
-		ec2:                  ec2.New(session.New(), config),
+		ec2:                  ec2.New(sess),
 	}
 }
 

@@ -37,8 +37,11 @@ func SendMessage(region string, topic string, subject string, message string) {
 		TargetArn: aws.String(topic),
 	}
 
-	sns := sns.New(session.New(), aws.NewConfig().WithRegion(region))
+	sess, sessErr := session.NewSession(aws.NewConfig().WithRegion(region))
+	awserror.HandleError(sessErr)
 
-	_, err := sns.Publish(params)
-	awserror.HandleError(err)
+	sns := sns.New(sess)
+
+	_, publishErr := sns.Publish(params)
+	awserror.HandleError(publishErr)
 }
