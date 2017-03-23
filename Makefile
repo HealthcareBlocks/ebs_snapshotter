@@ -19,4 +19,6 @@ tag_version:
 	version=$(shell docker run --rm healthcareblocks/ebs_snapshotter -v); \
 	docker tag healthcareblocks/ebs_snapshotter healthcareblocks/ebs_snapshotter:$$version
 
-.PHONY: build build_all clean docker push_to_docker tag_version
+release: linux docker push_to_docker
+
+.PHONY: build build_all clean docker push_to_docker tag_version release
